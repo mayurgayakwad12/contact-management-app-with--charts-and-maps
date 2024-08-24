@@ -1,12 +1,20 @@
-import { ADD_CONTACT, EDIT_CONTACT, DELETE_CONTACT, ContactActionTypes } from './constants';
+import {
+  ADD_CONTACT,
+  EDIT_CONTACT,
+  DELETE_CONTACT,
+  ContactActionTypes,
+  ENABLE_DISABLE_CONTACT,
+} from './constants';
 import { Contact } from './types'; // Ensure you import the Contact type
 
 interface ContactState {
   contacts: { [key: string]: Contact };
+  contactsListVisible: boolean;
 }
 
 const initialState: ContactState = {
   contacts: {},
+  contactsListVisible: false,
 };
 
 const reducer = (state = initialState, action: ContactActionTypes): ContactState => {
@@ -36,6 +44,11 @@ const reducer = (state = initialState, action: ContactActionTypes): ContactState
       return {
         ...state,
         contacts: remainingContacts, // Return a new object with the contact removed
+      };
+    case ENABLE_DISABLE_CONTACT:
+      return {
+        ...state,
+        contactsListVisible: action.payload,
       };
     default:
       return state;

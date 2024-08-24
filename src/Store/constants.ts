@@ -3,6 +3,7 @@ import { Contact } from './types';
 export const ADD_CONTACT = 'ADD_CONTACT';
 export const EDIT_CONTACT = 'EDIT_CONTACT';
 export const DELETE_CONTACT = 'DELETE_CONTACT';
+export const ENABLE_DISABLE_CONTACT = 'ENABLE_DISABLE_CONTACT';
 
 interface AddContactAction {
   type: typeof ADD_CONTACT;
@@ -19,4 +20,13 @@ interface DeleteContactAction {
   payload: string;
 }
 
-export type ContactActionTypes = AddContactAction | EditContactAction | DeleteContactAction;
+interface EnableDisableContactList {
+  type: typeof ENABLE_DISABLE_CONTACT;
+  payload: boolean;
+}
+
+export type ContactActionTypes =
+  | AddContactAction
+  | EditContactAction
+  | DeleteContactAction
+  | EnableDisableContactList;
