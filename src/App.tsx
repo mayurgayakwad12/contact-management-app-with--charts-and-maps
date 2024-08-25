@@ -12,11 +12,11 @@ const Header = () => {
   const getPageTitle = () => {
     switch (location.pathname) {
       case '/contacts':
-        return 'Contacts Page';
+        return 'Contact Page';
       case '/charts':
-        return 'Charts and Maps Page';
+        return 'Charts and Maps';
       default:
-        return 'Contacts Page'; // Default or homepage title
+        return 'Contact Page'; // Default or homepage title
     }
   };
 
@@ -34,7 +34,7 @@ function App() {
         {/* Header stays fixed at the top */}
         <Header />
         {/* Main layout with Sidebar and page content */}
-        <div className="flex">
+        <div className="flex flex-row max-lg:flex-col">
           <Sidebar /> {/* Sidebar remains fixed */}
           {/* Content area */}
           <div className="flex-1 p-4">

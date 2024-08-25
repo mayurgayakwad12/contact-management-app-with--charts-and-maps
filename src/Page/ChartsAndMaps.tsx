@@ -134,7 +134,7 @@ const ChartsAndMaps: React.FC = () => {
       </div>
 
       {/* Line Graph */}
-      <div className="mb-8 w-[85%] h-[80%]">
+      <div className="mb-8 w-[100%] h-[100%]">
         <Line data={chartData} key={generateUniqueId()} />
       </div>
 
