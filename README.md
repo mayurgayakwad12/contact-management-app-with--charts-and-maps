@@ -1,46 +1,110 @@
-# Getting Started with Create React App
+# Contact Management App with Charts and Maps
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a Contact Management app with a simple dashboard that includes Charts and Maps. It was built using **ReactJS**, **TypeScript**, **TailwindCSS**, **React Router v6**, and **React Query**. The app allows users to manage contacts (add, edit, view, delete), visualize COVID-19 data on a dashboard, and display information on a map.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### Contact Management
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Add Contacts**: A form to add new contacts.
+- **View Contacts**: Display a list of all added contacts.
+- **Edit Contacts**: Edit contact details.
+- **Delete Contacts**: Remove contacts from the list.
+- **Redux Integration**: Contact data is stored and managed using Redux for state management.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Charts and Maps
 
-### `npm test`
+- **Line Graph**: Visualize case fluctuations over time.
+- **Interactive Map**: React Leaflet map with markers showing country-specific COVID-19 stats, including active, recovered, and death cases.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **React**: Frontend library for building user interfaces.
+- **TypeScript**: JavaScript with static typing for better maintainability.
+- **TailwindCSS**: Utility-first CSS framework for styling.
+- **React Router v6**: Client-side routing for navigation.
+- **React Query (Tanstack Query)**: Data-fetching and caching for API calls.
+- **Redux**: State management for storing contact data.
+- **React Leaflet**: Map integration for displaying COVID-19 data on a map.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## APIs Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Worldwide COVID-19 Data**: [`https://disease.sh/v3/covid-19/all`](https://disease.sh/v3/covid-19/all)
+- **Country-Specific COVID-19 Data**: [`https://disease.sh/v3/covid-19/countries`](https://disease.sh/v3/covid-19/countries)
+- **Historical Data for Graph**: [`https://disease.sh/v3/covid-19/historical/all?lastdays=all`](https://disease.sh/v3/covid-19/historical/all?lastdays=all)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation and Setup
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Make sure you have the following installed on your local machine:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Node.js** (>=14.0)
+- **npm** or **yarn**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Steps to Run the App
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   gh repo clone mayurgayakwad12/contact-management-app-with-charts-and-maps
+   cd contact-management-app-with-charts-and-maps
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Install dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm install
+   ```
+
+   or
+
+   ```bash
+   yarn install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+   or
+
+   ```bash
+   yarn start
+   ```
+
+4. Open the app in your browser:
+   The app will automatically open at `http://localhost:3000`.
+
+### Deployment
+
+To deploy the app on services like Vercel or Heroku, follow their deployment instructions for React apps. Here's an example of deploying on [Vercel](https://contactmanagementappwithchartsandmaps.vercel.app/) or [GitHub Pages](https://github.com/mayurgayakwad12/contact-management-app-with-charts-and-maps).
+
+## Responsive Design
+
+The app is responsive and optimized for both desktop and mobile devices using TailwindCSS.
+
+## Documentation
+
+- **API Endpoints**: See the list of APIs used for fetching COVID-19 data in the **APIs Used** section.
+- **Redux State**: Contact data is managed and stored using Redux.
+- **React Query**: All API data fetching and caching is handled using React Query.
+
+## Code Comments
+
+The codebase is fully commented to make it easy to understand the logic and flow of the app.
+
+## Future Enhancements
+
+- **Authentication**: Add user authentication to protect routes.
+- **More Data Visualizations**: Expand the dashboard with more detailed graphs and charts.
+- **Advanced Filtering**: Add filters for contact management and COVID-19 data.
+
+## Contributing
+
+Feel free to open a pull request or an issue if you find any bugs or want to add new features.
+
