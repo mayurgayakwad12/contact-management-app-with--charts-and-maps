@@ -80,9 +80,10 @@ Make sure you have the following installed on your local machine:
 4. Open the app in your browser:
    The app will automatically open at `http://localhost:3000`.
 
-### Deployment
+## Live Demo & Repository
 
-To deploy the app on services like Vercel or Heroku, follow their deployment instructions for React apps. Here's an example of deploying on [Vercel](https://contactmanagementappwithchartsandmaps.vercel.app/) or [GitHub Pages](https://github.com/mayurgayakwad12/contact-management-app-with-charts-and-maps).
+- **Live Demo**: You can view the deployed app here: [Contact Management App](https://contactmanagementappwithchartsandmaps.vercel.app/)
+- **GitHub Repository**: You can explore the source code here: [GitHub Repo](https://github.com/mayurgayakwad12/contact-management-app-with-charts-and-maps)
 
 ## Responsive Design
 
